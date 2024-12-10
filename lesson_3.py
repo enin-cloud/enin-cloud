@@ -1,4 +1,4 @@
-задание 1
+#1
 x, y = input().split()
 if not x.isdigit() or not y.isdigit():
     print('Вводи числа')
@@ -9,7 +9,7 @@ else:
     else:
       print(x/y)
 
-задание 2
+#2
 print("Введите стоимость товара")
 b=20
 k=0.35
@@ -24,7 +24,7 @@ else:
   else:
     print(x)
 
-задание 3
+#3
 print("введи число месяца")
 x = input()
 if not x.isdigit():
