@@ -32,9 +32,9 @@ class Counter:
     
     
 c = Counter()
-c.value = 5         # Атрибут value будет добавлен
-print(c.value)      # Доступ к атрибуту value → 5
-print(c.name)       # Доступ к атрибуту name → None
+c.value = 5         
+print(c.value)     
+print(c.name)       
 
 #3
 class Car:
@@ -50,8 +50,8 @@ class Car:
         return 'This attribute is not available'
     
 c = Car("Toyota", "Corolla")
-print(c.make)      # Toyota
-print(c.color)     # This attribute is not available
+print(c.make)      
+print(c.color)    
 
 # 4
 class Rectangle:
@@ -62,9 +62,9 @@ class Rectangle:
     def __setattr__(self, key, value):
         if key not in self.__dict__:
             raise AttributeError(f"Local attributes are not allowed")
-        self.__dict__[key] = value  # Позволяем изменять только существующие атрибуты
+        self.__dict__[key] = value  
 
 r = Rectangle(10, 20)
-r.width = 15  # Успешно
-r.height = 25 # Успешно
-r.color = 'red'  # AttributeError: Local attributes are not allowed
+r.width = 15  
+r.height = 25
+r.color = 'red'  
