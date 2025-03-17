@@ -13,8 +13,8 @@ class Person:
             raise ValueError("Age must be a positive number!")
         else:
             return object.__setattr__(self, key, value)
-p = Person("John", 25)  # Успешно
-p.name = "Alice"         # Успешно
-p.age = 30               # Успешно
-p.name = ""              # ValueError: Name cannot be empty!
-p.age = -5               # ValueError: Age must be a positive number!
+p = Person("John", 25)  
+p.name = "Alice"     
+p.age = 30              
+p.name = ""           
+p.age = -5
